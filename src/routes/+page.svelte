@@ -26,7 +26,7 @@
 
 <div class="pb-8 mx-auto">
 	<div class="h-full">
-		<div class="w-full sm:rounded-lg sm:overflow-hidden">
+		<div class="w-full py-2 bg-white sm:py-0 sm:rounded-lg sm:overflow-hidden">
 			<Splide aria-label="Slide" {options}>
 				{#each slideImages as img, i}
 				<SplideSlide>

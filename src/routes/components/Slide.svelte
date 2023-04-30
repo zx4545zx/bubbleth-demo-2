@@ -18,7 +18,7 @@
 	};
 </script>
 
-<div id="slide" class="w-full mb-4 aspect-video sm:rounded-md sm:overflow-hidden">
+<div id="slide" class="w-full py-2 mb-4 bg-white aspect-video sm:rounded-md sm:overflow-hidden sm:py-0">
   <Splide aria-label="Slide" options={options}>
     {#each slideImages as img, i}
     <SplideSlide>
