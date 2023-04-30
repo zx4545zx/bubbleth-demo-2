@@ -1,0 +1,16 @@
+export const slideImages = [
+  new URL('../assets/food/slide/01.jpg', import.meta.url).href,
+  new URL('../assets/food/slide/02.jpg', import.meta.url).href,
+  new URL('../assets/food/slide/03.jpg', import.meta.url).href,
+  new URL('../assets/food/slide/04.jpg', import.meta.url).href,
+  new URL('../assets/food/slide/05.jpg', import.meta.url).href,
+  new URL('../assets/food/slide/06.jpg', import.meta.url).href,
+  new URL('../assets/food/slide/07.jpg', import.meta.url).href,
+  new URL('../assets/food/slide/08.jpg', import.meta.url).href,
+  new URL('../assets/food/slide/09.jpg', import.meta.url).href,
+  new URL('../assets/food/slide/010.jpg', import.meta.url).href,
+  new URL('../assets/food/slide/011.jpg', import.meta.url).href,
+  new URL('../assets/food/slide/012.jpg', import.meta.url).href,
+  new URL('../assets/food/slide/013.jpg', import.meta.url).href,
+  new URL('../assets/food/slide/014.jpg', import.meta.url).href,
+]
