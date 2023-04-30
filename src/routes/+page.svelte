@@ -26,15 +26,17 @@
 
 <div class="pb-8 mx-auto">
 	<div class="h-full">
-		<Splide aria-label="Slide" {options}>
-			{#each slideImages as img, i}
+		<div class="w-full sm:rounded-lg sm:overflow-hidden">
+			<Splide aria-label="Slide" {options}>
+				{#each slideImages as img, i}
 				<SplideSlide>
 					<div class="w-full">
 						<img src={img} alt={`food-${i + 1}`} class="object-cover w-full h-full mx-auto min-h-[200px]" />
 					</div>
 				</SplideSlide>
-			{/each}
-		</Splide>
+				{/each}
+			</Splide>
+		</div>
 
 		<div class="pb-16 m-4">
 			<!-- // text -->
