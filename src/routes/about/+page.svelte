@@ -48,25 +48,25 @@
 <label for="my-modal" class="cursor-pointer modal modal-bottom sm:modal-middle">
 	<label class="relative modal-box" for="">
 		<a class="flex justify-start mb-2 btn btn-outline btn-secondary" href="http://line.me/ti/p/@bubbleintheforest"
-			><img src={line} alt="line" class="w-8" />&nbsp; LINE</a
+			 target="_blank" ><img src={line} alt="line" class="w-8" />&nbsp; LINE</a
 		>
 		<a
 			class="flex justify-start mb-2 btn btn-outline btn-secondary"
 			href="http://m.facebook.com/Bubbleintheforest"
-			><img src={facebook} alt="facebook" class="w-8" />&nbsp; FACEBOOK</a
+			 target="_blank" ><img src={facebook} alt="facebook" class="w-8" />&nbsp; FACEBOOK</a
 		>
 		<a class="flex justify-start mb-2 btn btn-outline btn-secondary" href="http://m.me/Bubbleintheforest"
-			><img src={messenger} alt="messenger" class="w-8" />&nbsp; MESSENGER</a
+			 target="_blank" ><img src={messenger} alt="messenger" class="w-8" />&nbsp; MESSENGER</a
 		>
 		<a
 			class="flex justify-start mb-2 btn btn-outline btn-secondary"
 			href="http://m.instagram.com/bubbleintheforest"
-			><img src={instagram} alt="instagram" class="w-8" />&nbsp; INSTAGRAM</a
+			 target="_blank" ><img src={instagram} alt="instagram" class="w-8" />&nbsp; INSTAGRAM</a
 		>
 		<a
 			class="flex justify-start mb-2 btn btn-outline btn-secondary"
 			href="http://www.tiktok.com/@bubbleintheforest"
-			><img src={tiktok} alt="tiktok" class="w-8" />&nbsp; TIK TOK</a
+			 target="_blank" ><img src={tiktok} alt="tiktok" class="w-8" />&nbsp; TIK TOK</a
 		>
 	</label>
 </label>

@@ -104,11 +104,11 @@
 			tabindex="0"
 			class="p-2 mt-3 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
 			>
-      <li><a href="http://line.me/ti/p/@bubbleintheforest"><img src={line} alt="line" class="w-8"> LINE</a></li>
-      <li><a href="http://m.facebook.com/Bubbleintheforest"><img src={facebook} alt="facebook" class="w-8"> FACEBOOK</a></li>
-			<li><a href="http://m.me/Bubbleintheforest"><img src={messenger} alt="messenger" class="w-8"> MESSENGER</a></li>
-			<li><a href="http://m.instagram.com/bubbleintheforest"><img src={instagram} alt="instagram" class="w-8"> INSTAGRAM</a></li>
-			<li><a href="http://www.tiktok.com/@bubbleintheforest"><img src={tiktok} alt="tiktok" class="w-8"> TIK TOK</a></li>
+      <li><a href="http://line.me/ti/p/@bubbleintheforest" target="_blank"><img src={line} alt="line" class="w-8"> LINE</a></li>
+      <li><a href="http://m.facebook.com/Bubbleintheforest" target="_blank"><img src={facebook} alt="facebook" class="w-8"> FACEBOOK</a></li>
+			<li><a href="http://m.me/Bubbleintheforest" target="_blank"><img src={messenger} alt="messenger" class="w-8"> MESSENGER</a></li>
+			<li><a href="http://m.instagram.com/bubbleintheforest" target="_blank"><img src={instagram} alt="instagram" class="w-8"> INSTAGRAM</a></li>
+			<li><a href="http://www.tiktok.com/@bubbleintheforest" target="_blank"><img src={tiktok} alt="tiktok" class="w-8"> TIK TOK</a></li>
 		</ul>
 	</div>
 </div>
