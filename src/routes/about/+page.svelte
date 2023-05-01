@@ -18,8 +18,8 @@
 <div class="py-4 mx-4 text-center rounded-xl">
 	<p>170 ซ.เจริญท่า ต.บางเตย</p>
 	<p>อ.สามพราน นครปฐม 73170</p>
-	<p class="mt-4">เปิด-ปิด : 10:00 น. - 22:00 น.</p>
-	<p>ติดต่อ : <a href="tel:+66657276888" class="underline text-secondary">065-727-6888</a></p>
+	<p class="mt-4">เปิด-ปิด : 10:00 น. - 21:00 น.</p>
+	<p>ติดต่อ : <a href="tel:0657276888" class="underline text-secondary">065-727-6888</a></p>
 </div>
 
 <div class="w-full p-4">
