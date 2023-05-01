@@ -30,12 +30,11 @@
 	];
 </script>
 
-<div class="btm-nav sm:hidden">
+<div class="h-auto btm-nav sm:hidden">
 	{#each pages as p}
-		<a href={p.url} class={$page.url.pathname === p.url ? 'active bg-primary' : ''}>
-			<img src={p.img} alt="bottom-nav" class="w-8">
-			<!-- {$page.url.pathname === p.url ? p.name : ''} -->
-			{p.name}
+		<a href={p.url} class={$page.url.pathname === p.url ? ' bg-primary' : ''}>
+				<img src={p.img} alt="bottom-nav" class={$page.url.pathname === p.url ? 'w-14' : 'w-14'}>
+				<div class="-translate-y-2">{$page.url.pathname === p.url ? p.name : ''}</div>
 		</a>
 	{/each}
 </div>
