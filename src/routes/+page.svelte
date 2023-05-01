@@ -6,17 +6,7 @@
 
 	import { slideImages } from '$lib/data/homeSlide';
 	import { landingImages } from '$lib/data/homeLanding';
-
-	let options = {
-		width: '100%',
-		height: '100%',
-		// gap: '1rem',
-		type: 'loop',
-		autoplay: true,
-		perPage: 1,
-		pagination: false,
-		speed: 1000
-	};
+	import SlideFrame from './components/SlideFrame.svelte';
 </script>
 
 <svelte:head>
@@ -26,17 +16,8 @@
 
 <div class="pb-8 mx-auto">
 	<div class="h-full">
-		<div class="w-full py-2 bg-white sm:py-0 sm:rounded-lg sm:overflow-hidden">
-			<Splide aria-label="Slide" {options}>
-				{#each slideImages as img, i}
-				<SplideSlide>
-					<div class="w-full">
-						<img src={img} alt={`food-${i + 1}`} class="object-cover w-full h-full mx-auto min-h-[200px]" />
-					</div>
-				</SplideSlide>
-				{/each}
-			</Splide>
-		</div>
+
+		<SlideFrame images={slideImages} />
 
 		<div class="pb-16 m-4">
 			<!-- // text -->
