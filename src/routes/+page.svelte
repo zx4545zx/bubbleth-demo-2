@@ -49,7 +49,7 @@
 			</div>
 		</div>
 		
-		<div id="checkpoint" class="py-8 bg-white">
+		<!-- <div id="checkpoint" class="py-8 bg-white">
 		</div>
 		
 		<div id="food" class="py-8">
@@ -59,7 +59,7 @@
 		</div>
 		
 		<div id="event" class="py-8">
-		</div>
+		</div> -->
 
 	</div>
 </div>
