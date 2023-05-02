@@ -22,7 +22,7 @@
 	<main>
 		<Navbar />
 		{#key $page.url.pathname}
-			<div class="mx-auto sm:container sm:w-3/4" in:fly={{ y:400, duration: 500 }}>
+			<div class="mx-auto sm:container sm:w-3/4 mb-16 pb-8" in:fly={{ y:400, duration: 500 }}>
 				<slot  />
 			</div>
 		{/key}
