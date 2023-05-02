@@ -8,7 +8,7 @@
 
 	let pages = [
 		{
-			name: "About",
+			name: "About Us",
 			url: '/about',
 			img: highlight,
 		},
