@@ -8,8 +8,8 @@
 
 	let pages = [
 		{
-			name: "Highlight",
-			url: '/',
+			name: "About",
+			url: '/about',
 			img: highlight,
 		},
 		{

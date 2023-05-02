@@ -12,7 +12,7 @@
 </svelte:head>
 
 <div class="mx-auto mb-4 text-center">
-	<h1 class="text-3xl font-bold">Contact Us</h1>
+	<h1 class="text-3xl font-bold">About Us</h1>
 </div>
 
 <div class="py-4 mx-4 text-center rounded-xl">
