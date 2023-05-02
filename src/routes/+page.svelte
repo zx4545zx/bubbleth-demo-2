@@ -25,7 +25,7 @@
 				<h1 class="pb-2 text-3xl">ยินดีต้อนรับ สู่</h1>
 				<h2 class="text-4xl">
 					<span class=" text-secondary">Bubble</span> in the
-					<span class=" text-primary">forrest</span>
+					<span class=" text-primary">forest</span>
 				</h2>
 				<h4 class="text-lg">คาเฟ่ และร้านอาหาร สไตล์มัลดีฟส์สุดเก๋ ที่มีเรือนไม้ลอยน้ำ</h4>
 			</div>
