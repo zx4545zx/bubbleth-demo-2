@@ -1,12 +1,14 @@
 <script>
-	import BottomNav from './components/BottomNav.svelte';
 	import Navbar from './components/Navbar.svelte';
+	import Footer from './components/Footer.svelte';
 	import WaveBottom from './components/WaveBottom.svelte';
+	import BottomNav from './components/BottomNav.svelte';
+
+	import { page } from '$app/stores';
+	import { fly } from 'svelte/transition';
+
 	import './styles.css';
 	import '@splidejs/svelte-splide/css';
-	import Footer from './components/Footer.svelte';
-	import { fade, fly } from 'svelte/transition';
-	import { page } from '$app/stores';
 </script>
 
 <svelte:head>
@@ -27,7 +29,7 @@
 			</div>
 		{/key}
 		<Footer />
-		<!-- <WaveBottom /> -->
+		<WaveBottom />
 	</main>
 
 	<BottomNav />

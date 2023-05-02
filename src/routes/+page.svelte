@@ -1,16 +1,12 @@
 <script>
-	import { Splide, SplideSlide } from '@splidejs/svelte-splide';
-
+	import SlideFrame from './components/SlideFrame.svelte';
 	import Card from './components/Card.svelte';
 	import Content from './components/Content.svelte';
 
 	import { slideImages } from '$lib/data/homeSlide';
 	import { landingImages } from '$lib/data/homeLanding';
-	import SlideFrame from './components/SlideFrame.svelte';
-	import { fade, fly } from 'svelte/transition';
 
-	import checkpoint from '$lib/assets/checkpoint/1.jpg';
-	import Slide from './components/Slide.svelte';
+	// import checkpoint from '$lib/assets/checkpoint/1.jpg';
 </script>
 
 <svelte:head>
@@ -19,11 +15,11 @@
 </svelte:head>
 
 <!-- svelte-ignore missing-declaration -->
-<div class="pb-8 mx-auto">
+<div class="mx-auto h-full">
 	<div class="h-full">
 		<SlideFrame images={slideImages} />
 
-		<div class="pb-16 m-4">
+		<div class="pb-8 m-4">
 			<!-- // text -->
 			<div class="add-bg p-4 text-center rounded-full">
 				<h1 class="pb-2 text-3xl">ยินดีต้อนรับ สู่</h1>
@@ -53,17 +49,12 @@
 			</div>
 		</div>
 
-		<div id="checkpoint" class="p-8 my">
-		</div>
+		<Content>
+			{#each landingImages as img}
+				<Card url={img.url} title={img.title} des={img.des} />
+			{/each}
+		</Content>
 
-		<!-- <div id="food" class="py-8">
-		</div> -->
-
-		<!-- <div id="review" class="py-8">
-		</div> -->
-
-		<!-- <div id="event" class="py-8">
-		</div> -->
 	</div>
 </div>
 
