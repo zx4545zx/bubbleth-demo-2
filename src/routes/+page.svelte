@@ -7,6 +7,7 @@
 	import { landingImages } from '$lib/data/homeLanding';
 
 	// import checkpoint from '$lib/assets/checkpoint/1.jpg';
+
 </script>
 
 <svelte:head>
