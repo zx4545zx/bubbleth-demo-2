@@ -8,6 +8,9 @@
 	import { landingImages } from '$lib/data/homeLanding';
 	import SlideFrame from './components/SlideFrame.svelte';
 	import { fade, fly } from 'svelte/transition';
+
+	import checkpoint from '$lib/assets/checkpoint/1.jpg';
+	import Slide from './components/Slide.svelte';
 </script>
 
 <svelte:head>
@@ -16,14 +19,13 @@
 </svelte:head>
 
 <!-- svelte-ignore missing-declaration -->
-<div class="pb-8 mx-auto" >
+<div class="pb-8 mx-auto">
 	<div class="h-full">
-
 		<SlideFrame images={slideImages} />
 
 		<div class="pb-16 m-4">
 			<!-- // text -->
-			<div class="p-4 text-center rounded-full">
+			<div class="add-bg p-4 text-center rounded-full">
 				<h1 class="pb-2 text-3xl">ยินดีต้อนรับ สู่</h1>
 				<h2 class="text-4xl">
 					<span class=" text-secondary">Bubble</span> in the
@@ -50,21 +52,26 @@
 				>
 			</div>
 		</div>
-		
-		<!-- <div id="checkpoint" class="py-8 bg-white">
+
+		<div id="checkpoint" class="p-8 my">
 		</div>
-		
-		<div id="food" class="py-8">
-		</div>
-		
-		<div id="review" class="py-8 bg-white">
-		</div>
-		
-		<div id="event" class="py-8">
+
+		<!-- <div id="food" class="py-8">
 		</div> -->
 
+		<!-- <div id="review" class="py-8">
+		</div> -->
+
+		<!-- <div id="event" class="py-8">
+		</div> -->
 	</div>
 </div>
 
 <style>
+	.add-bg {
+		background-image: url('../lib/assets/bubble-text.png');
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
 </style>
