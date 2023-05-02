@@ -5,6 +5,7 @@
 	import event from '../../lib/assets/icon/event.png';
 	import food from '../../lib/assets/icon/food.png';
 	import review from '../../lib/assets/icon/review.png';
+	import WaveBottom from './WaveBottom.svelte';
 
 	let pages = [
 		{
@@ -126,11 +127,14 @@
 	{/each}
 </div> -->
 
-<div class="add-img btm-nav sm:hidden">
+<div class=" fixed -mt-20 bottom-0">
+	<WaveBottom />
+</div>
+<div class="add-img btm-nav h-16 sm:hidden">
 	{#each pages as p}
-		<a href={p.url} class={$page.url.pathname === p.url ? 'active text-primary' : ''}>
+		<a href={p.url} class={$page.url.pathname === p.url ? 'active text-primary  bg-t' : ''}>
 			<!-- {@html p.svg} -->
-			<img src={p.img} alt="bottom-nav" class={$page.url.pathname === p.url ? 'w-14' : 'w-14'}>
+			<img src={p.img} alt="bottom-nav" class={$page.url.pathname === p.url ? 'w-14 ' : 'w-14'}>
 		</a>
 	{/each}
 </div>
@@ -141,4 +145,7 @@
 		background-position: center;
 		background-size: cover;
 	}
+	.bg-t {
+    background: rgba(139, 139, 139, 0.2);
+}
 </style>

@@ -27,7 +27,7 @@
 			</div>
 		{/key}
 		<Footer />
-		<WaveBottom />
+		<!-- <WaveBottom /> -->
 	</main>
 
 	<BottomNav />
