@@ -6,7 +6,7 @@
 	export let des = '';
 </script>
 
-	<div class="relative w-full mt-8 sm:mt-24">
+	<!-- <div class="relative w-full mt-8 sm:mt-24">
 		<div class="absolute w-full -mt-8 frame-img sm:-mt-12 lg:-mt-16 xl:-my-24">
 			<img src={frame} alt="frame-img" class="w-full m-auto" />
 		</div>
@@ -27,10 +27,20 @@
 			<p class="p-4">{title}</p>
 			<span>{des} &nbsp;</span>
 		{/if}
+	</div> -->
+
+	<div class="w-full p-4">
+		<div class="card w-96 bg-base-100 shadow-xl mx-auto">
+			<figure><img src={url} alt="card-img" /></figure>
+			<div class="card-body">
+				<h2 class="card-title">{title}</h2>
+				<p>{des}</p>
+			</div>
+		</div>
 	</div>
 
 <style>
-	* {
+	/* * {
 		font-family: 'Pattaya', sans-serif;
 	}
 	.img-slide {
@@ -53,5 +63,5 @@
 		.frame-img {
 			margin-top: -1.25rem;
 		}
-	}
+	} */
 </style>

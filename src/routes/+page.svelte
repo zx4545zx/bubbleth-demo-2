@@ -38,7 +38,7 @@
 		</Content>
 
 		<!-- // location -->
-		<div class="text-center">
+		<div class="text-center p-4">
 			<a href="/about" class="mx-auto text-sm rounded-full btn btn-sm btn-outline btn-secondary">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
