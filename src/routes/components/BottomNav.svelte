@@ -48,6 +48,6 @@
 		background-size: cover;
 	}
 	.bg-t {
-    background: rgba(139, 139, 139, 0.2);
+    background: rgba(197, 254, 197, 0.2);
 }
 </style>
