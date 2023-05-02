@@ -7,6 +7,7 @@
 	import { slideImages } from '$lib/data/homeSlide';
 	import { landingImages } from '$lib/data/homeLanding';
 	import SlideFrame from './components/SlideFrame.svelte';
+	import { fade, fly } from 'svelte/transition';
 </script>
 
 <svelte:head>
@@ -14,7 +15,8 @@
 	<meta name="description" content="Bubble in tho Forrest" />
 </svelte:head>
 
-<div class="pb-8 mx-auto">
+<!-- svelte-ignore missing-declaration -->
+<div class="pb-8 mx-auto" >
 	<div class="h-full">
 
 		<SlideFrame images={slideImages} />

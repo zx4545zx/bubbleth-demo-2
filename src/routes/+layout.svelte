@@ -1,11 +1,12 @@
 <script>
-	import { fade } from 'svelte/transition'
 	import BottomNav from './components/BottomNav.svelte';
 	import Navbar from './components/Navbar.svelte';
 	import WaveBottom from './components/WaveBottom.svelte';
 	import './styles.css';
 	import '@splidejs/svelte-splide/css';
 	import Footer from './components/Footer.svelte';
+	import { fade, fly } from 'svelte/transition';
+	import { page } from '$app/stores';
 </script>
 
 <svelte:head>
@@ -20,9 +21,11 @@
 <div class="app">
 	<main>
 		<Navbar />
-		<div transition:fade class="mx-auto sm:container sm:w-3/4" >
-			<slot />
-		</div>
+		{#key $page.url.pathname}
+			<div class="mx-auto sm:container sm:w-3/4" in:fly={{ y:400, duration: 500 }}>
+				<slot  />
+			</div>
+		{/key}
 		<Footer />
 		<WaveBottom />
 	</main>
