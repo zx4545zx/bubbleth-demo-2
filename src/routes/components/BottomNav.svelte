@@ -8,11 +8,6 @@
 
 	let pages = [
 		{
-			name: "About Us",
-			url: '/about',
-			img: highlight,
-		},
-		{
 			name: "Food",
 			url: '/food',
 			img: food
@@ -26,6 +21,11 @@
 			name: "Event",
 			url: '/event',
 			img: event
+		},
+		{
+			name: "About Us",
+			url: '/about',
+			img: highlight,
 		},
 	];
 	

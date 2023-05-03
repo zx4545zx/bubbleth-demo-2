@@ -5,6 +5,9 @@
 	import instagram from '$lib/assets/icon/social/instagram.png';
 	import tiktok from '$lib/assets/icon/social/tiktok.png';
 	import about from '$lib/assets/about/DJI_0110.jpg';
+	import Card from '../components/Card.svelte';
+	import { zoneImages } from '$lib/data/aboutLanding';
+	import WoodenSign from '../components/WoodenSign.svelte';
 </script>
 
 <svelte:head>
@@ -17,8 +20,17 @@
 </div>
 
 <div class="py-4 mx-4 text-center">
-	<img src="{about}" alt="aboutPic">
-<p class="pt-4">คาเฟ่สไตล์อเมริกันอินเดียนแดง ให้ความรู้สึกสกชื่น สีเขียวน้ำตาล เป็นธรรมชาติ ผสมผสานกับความ Beachy และ น้ำสี Turquoise จนได้ขนานนามว่า Mini Maldives Thailand</p>
+	<img src={about} alt="aboutPic" />
+	<p class="pt-4">
+		คาเฟ่สไตล์อเมริกันอินเดียนแดง ให้ความรู้สึกสกชื่น สีเขียวน้ำตาล เป็นธรรมชาติ ผสมผสานกับความ
+		Beachy และ น้ำสี Turquoise จนได้ขนานนามว่า Mini Maldives Thailand
+	</p>
+</div>
+<WoodenSign label='Dining Zone' />
+<div>
+	{#each zoneImages as z}
+		<Card url={z.url} title={z.title} des={z.des} />
+	{/each}
 </div>
 
 <div class="py-4 mx-4 text-center rounded-xl">
@@ -53,26 +65,30 @@
 <input type="checkbox" id="my-modal" class="modal-toggle" />
 <label for="my-modal" class="cursor-pointer modal modal-bottom sm:modal-middle">
 	<label class="relative modal-box" for="">
-		<a class="flex justify-start mb-2 btn btn-outline btn-secondary" href="http://line.me/ti/p/@bubbleintheforest"
-			 target="_blank" ><img src={line} alt="line" class="w-8" />&nbsp; LINE</a
+		<a
+			class="flex justify-start mb-2 btn btn-outline btn-secondary"
+			href="http://line.me/ti/p/@bubbleintheforest"
+			target="_blank"><img src={line} alt="line" class="w-8" />&nbsp; LINE</a
 		>
 		<a
 			class="flex justify-start mb-2 btn btn-outline btn-secondary"
 			href="http://m.facebook.com/Bubbleintheforest"
-			 target="_blank" ><img src={facebook} alt="facebook" class="w-8" />&nbsp; FACEBOOK</a
+			target="_blank"><img src={facebook} alt="facebook" class="w-8" />&nbsp; FACEBOOK</a
 		>
-		<a class="flex justify-start mb-2 btn btn-outline btn-secondary" href="http://m.me/Bubbleintheforest"
-			 target="_blank" ><img src={messenger} alt="messenger" class="w-8" />&nbsp; MESSENGER</a
+		<a
+			class="flex justify-start mb-2 btn btn-outline btn-secondary"
+			href="http://m.me/Bubbleintheforest"
+			target="_blank"><img src={messenger} alt="messenger" class="w-8" />&nbsp; MESSENGER</a
 		>
 		<a
 			class="flex justify-start mb-2 btn btn-outline btn-secondary"
 			href="http://m.instagram.com/bubbleintheforest"
-			 target="_blank" ><img src={instagram} alt="instagram" class="w-8" />&nbsp; INSTAGRAM</a
+			target="_blank"><img src={instagram} alt="instagram" class="w-8" />&nbsp; INSTAGRAM</a
 		>
 		<a
 			class="flex justify-start mb-2 btn btn-outline btn-secondary"
 			href="http://www.tiktok.com/@bubbleintheforest"
-			 target="_blank" ><img src={tiktok} alt="tiktok" class="w-8" />&nbsp; TIK TOK</a
+			target="_blank"><img src={tiktok} alt="tiktok" class="w-8" />&nbsp; TIK TOK</a
 		>
 	</label>
 </label>
