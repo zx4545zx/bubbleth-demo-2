@@ -29,7 +29,7 @@ export const landingImages = [
   },
   {
     url: new URL("../assets/home/landing/6.jpg", import.meta.url).href,
-    title: "บรรยากาศยามคำ่คืน",
+    title: "บรรยากาศยามค่ำคืน",
     des: "ร้านเปิดตั้งแต่เวลา 10.00 น. - 21.00 น. เพื่อการรับประทานอาหารมื้อดึก สำหรับคู่รักหรือครอบครัว",
   },
 ];
