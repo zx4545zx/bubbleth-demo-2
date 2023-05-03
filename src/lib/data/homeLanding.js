@@ -8,6 +8,7 @@ export const landingImages = [
     url: new URL("../assets/home/landing/2.jpg", import.meta.url).href,
     title: "อาหารรสเลิส",
     des: "อาหารมีเลิสรส อีกทั้งยังสามารถสังสรรค์อาหาร และรสชาติได้ตามใจต้องการ",
+    href: "/food"
   },
   {
     url: new URL("../assets/home/landing/3.jpg", import.meta.url).href,
@@ -18,6 +19,7 @@ export const landingImages = [
     url: new URL("../assets/home/landing/4.jpg", import.meta.url).href,
     title: "อีเว้นท์มากมายที่น่าติดตาม",
     des: "อีเว้นท์ที่จะมีกิจกรรมสนุกๆ ให้ลูกค้าได้ร่วมสนุก อีกทั้งยังมีโปรโมชั่นอีกมากมายให้ติดตาม",
+    href: "/event"
   },
   {
     url: new URL("../assets/home/landing/5.jpg", import.meta.url).href,

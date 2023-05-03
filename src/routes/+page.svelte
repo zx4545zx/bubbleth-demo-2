@@ -7,7 +7,6 @@
 	import { landingImages } from '$lib/data/homeLanding';
 
 	// import checkpoint from '$lib/assets/checkpoint/1.jpg';
-
 </script>
 
 <svelte:head>
@@ -34,7 +33,9 @@
 
 		<Content>
 			{#each landingImages as img}
-				<Card url={img.url} title={img.title} des={img.des} />
+				<a href={img?.href}>
+					<Card url={img.url} title={img.title} des={img.des} />
+				</a>
 			{/each}
 		</Content>
 
@@ -55,7 +56,6 @@
 				</svg> Location</a
 			>
 		</div>
-
 	</div>
 </div>
 
