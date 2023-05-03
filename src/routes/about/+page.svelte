@@ -4,6 +4,7 @@
 	import messenger from '$lib/assets/icon/social/messenger.png';
 	import instagram from '$lib/assets/icon/social/instagram.png';
 	import tiktok from '$lib/assets/icon/social/tiktok.png';
+	import about from '$lib/assets/about/DJI_0110.jpg';
 </script>
 
 <svelte:head>
@@ -13,6 +14,11 @@
 
 <div class="mx-auto mb-4 text-center">
 	<h1 class="text-3xl font-bold">About Us</h1>
+</div>
+
+<div class="py-4 mx-4 text-center">
+	<img src="{about}" alt="aboutPic">
+<p class="pt-4">คาเฟ่สไตล์อเมริกันอินเดียนแดง ให้ความรู้สึกสกชื่น สีเขียวน้ำตาล เป็นธรรมชาติ ผสมผสานกับความ Beachy และ น้ำสี Turquoise จนได้ขนานนามว่า Mini Maldives Thailand</p>
 </div>
 
 <div class="py-4 mx-4 text-center rounded-xl">
