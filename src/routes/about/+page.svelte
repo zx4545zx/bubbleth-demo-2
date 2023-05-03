@@ -15,9 +15,7 @@
 	<meta name="description" content="About - Bubble in the Forrest" />
 </svelte:head>
 
-<div class="mx-auto mb-4 text-center">
-	<h1 class="text-3xl font-bold">About Us</h1>
-</div>
+	<WoodenSign label='About Us' />
 
 <div class="py-4 mx-4 text-center">
 	<img src={about} alt="aboutPic" class=" rounded-2xl"/>

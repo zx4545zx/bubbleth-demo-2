@@ -3,6 +3,7 @@
 	import { landingImages } from '$lib/data/eventLanding';
 	import Slide from "../components/Slide.svelte";
 	import SlideFrame from "../components/SlideFrame.svelte";
+	import WoodenSign from "../components/WoodenSign.svelte";
 	// import { slide } from "svelte/transition";
 	
 	let allEvent = [...sk, ...cm]
@@ -16,9 +17,7 @@
 <!-- <Slide {slideImages} /> -->
 <SlideFrame images={allEvent} />
 
-<div class="mx-auto mb-4 text-center">
-	<h1 class="text-3xl font-bold">Events</h1>
-</div>
+<WoodenSign label='Events' />
 
 <div class="flex flex-col gap-4 px-4">
 	{#each landingImages as img}

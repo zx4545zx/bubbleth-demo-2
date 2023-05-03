@@ -1,6 +1,7 @@
 <script>
 	import { landingImages } from '$lib/data/reviewLanding';
 	import wongnai from '$lib/assets/icon/social/wongnai.png';
+	import WoodenSign from '../components/WoodenSign.svelte';
 </script>
 
 <svelte:head>
@@ -8,9 +9,7 @@
 	<meta name="description" content="Review - Bubble in the Forrest" />
 </svelte:head>
 
-<div class="mx-auto mb-4 text-center">
-	<h1 class="text-3xl font-bold">Reviews</h1>
-</div>
+<WoodenSign label='Review' />
 
 <div class="flex flex-col gap-4 px-4">
 	{#each landingImages as img}

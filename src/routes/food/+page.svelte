@@ -3,6 +3,7 @@
 	import { slideImages } from "$lib/data/foodSlide"
 	import Slide from '../components/Slide.svelte';
 	import SlideFrame from '../components/SlideFrame.svelte';
+	import WoodenSign from '../components/WoodenSign.svelte';
 </script>
 
 <svelte:head>
@@ -14,9 +15,7 @@
 
 <SlideFrame images={slideImages}/>
 
-<div class="mx-auto mb-4 text-center">
-	<h1 class="text-3xl font-bold">Food & Drink</h1>
-</div>
+<WoodenSign label='Food & Drinks' />
 
 <div class="flex flex-col gap-4 px-4">
 	{#each landingImages as img}

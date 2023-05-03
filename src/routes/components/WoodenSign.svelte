@@ -10,13 +10,13 @@
 </div> -->
 
 <div class="relative">
-	<img src={woodenSign} alt="your-img" class="w-full h-auto object-contain pe-3" />
+	<img src={woodenSign} alt="woodenSign" class="w-9/12 h-auto mx-auto max-w-sm pe-2"/>
 	<div class="absolute inset-0 flex items-center justify-center">
-		<p
-			class="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl pb-5"
-			style="font-size: 8vw; font-family: cursive;"
+		<h1
+			class="text-center text-xl font-black sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"
+			style="padding-bottom: 20px; font-family: cursive;"
 		>
 			{label}
-		</p>
+		</h1>
 	</div>
 </div>
