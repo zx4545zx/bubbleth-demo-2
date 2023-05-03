@@ -21,11 +21,15 @@
 
 		<div class="pb-8 m-4">
 			<!-- // text -->
-			<div class="add-bg p-4 text-center rounded-full">
+			<div class="add-bg p-4 text-start rounded-full">
 				<h1 class="pb-2 text-3xl">ยินดีต้อนรับ</h1>
 				<h2 class="text-4xl">
-					<span class=" text-secondary">Bubble</span> in the
-					<span class=" text-primary">forest</span>
+					<div class="text-center">
+						<span style="font-family: 'Lora';">BUBBLE</span>
+					</div>
+					<p style="font-family: 'Lora';">in the</p>
+					<p class="text-center" style="font-family: 'Lora';"><span style="font-family: 'Great Vibes'; font-size: 70px;">F</span>orest</p>
+
 				</h2>
 				<h4 class="text-lg">คาเฟ่ และร้านอาหาร สไตล์มัลดีฟส์สุดเก๋ ที่มีเรือนไม้ลอยน้ำ</h4>
 			</div>

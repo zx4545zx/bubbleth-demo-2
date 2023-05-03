@@ -8,6 +8,8 @@
 	import Card from '../components/Card.svelte';
 	import { zoneImages } from '$lib/data/aboutLanding';
 	import WoodenSign from '../components/WoodenSign.svelte';
+	import SlideFrame from '../components/SlideFrame.svelte';
+	import { slideImages } from '$lib/data/aboutSlide';
 </script>
 
 <svelte:head>
@@ -15,16 +17,16 @@
 	<meta name="description" content="About - Bubble in the Forrest" />
 </svelte:head>
 
-	<WoodenSign label='About Us' />
+<WoodenSign label="About Us" />
 
 <div class="py-4 mx-4 text-center">
-	<img src={about} alt="aboutPic" class=" rounded-2xl"/>
+	<SlideFrame images={slideImages} />
 	<p class="pt-4">
-		คาเฟ่สไตล์อเมริกันอินเดียนแดง ให้ความรู้สึกสกชื่น สีเขียวน้ำตาล เป็นธรรมชาติ ผสมผสานกับความ
+		คาเฟ่สไตล์อเมริกันอินเดียนแดง ให้ความรู้สึกสดชื่น สีเขียวน้ำตาล เป็นธรรมชาติ ผสมผสานกับความ
 		Beachy และ น้ำสี Turquoise จนได้ขนานนามว่า Mini Maldives Thailand
 	</p>
 </div>
-<WoodenSign label='Zone' />
+<WoodenSign label="Zone" />
 <div>
 	{#each zoneImages as z}
 		<Card url={z.url} title={z.title} des={z.des} />
