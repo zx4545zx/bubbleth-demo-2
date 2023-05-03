@@ -17,7 +17,9 @@
 	<meta name="description" content="About - Bubble in the Forrest" />
 </svelte:head>
 
-<WoodenSign label="About Us" />
+<div class=" mt-6">
+	<WoodenSign label='About Us' />
+</div>
 
 <div class="py-4 mx-4 text-center">
 	<SlideFrame images={slideImages} />
@@ -26,8 +28,9 @@
 		Beachy และ น้ำสี Turquoise จนได้ขนานนามว่า Mini Maldives Thailand
 	</p>
 </div>
-<WoodenSign label="Zone" />
-<div>
+<WoodenSign label='Zone' />
+
+<div id="zone">
 	{#each zoneImages as z}
 		<Card url={z.url} title={z.title} des={z.des} />
 	{/each}

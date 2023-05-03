@@ -9,7 +9,9 @@
 	<meta name="description" content="Review - Bubble in the Forrest" />
 </svelte:head>
 
-<WoodenSign label='Review' />
+<div class=" mt-6">
+	<WoodenSign label='Reviews' />
+</div>
 
 <div class="flex flex-col gap-4 px-4">
 	{#each landingImages as img}
