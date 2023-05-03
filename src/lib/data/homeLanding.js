@@ -15,6 +15,7 @@ export const landingImages = [
     url: new URL("../assets/home/landing/3.jpg", import.meta.url).href,
     title: "บรรยากาศร่มรื่น",
     des: "บรรยากาศร่มรื่น สบายๆ พนักงานอัธยาศัยดี เหมาะแก่การมาพักผ่อนหย่อนใจ",
+    href: "/about"
   },
   {
     url: new URL("../assets/home/landing/4.jpg", import.meta.url).href,
@@ -26,10 +27,12 @@ export const landingImages = [
     url: new URL("../assets/home/landing/5.jpg", import.meta.url).href,
     title: "ดนตรีสด",
     des: "บรรยากาศที่ดี ต้องคู่กับบทเพลงที่ช่วยชะโลมจิตใจ การแสดงดนตรีสด บทเพลงสบายๆ จากทางร้าน",
+    href: "/event"
   },
   {
     url: new URL("../assets/home/landing/6.jpg", import.meta.url).href,
     title: "บรรยากาศยามค่ำคืน",
     des: "ร้านเปิดตั้งแต่เวลา 10.00 น. - 21.00 น. เพื่อการรับประทานอาหารมื้อดึก สำหรับคู่รักหรือครอบครัว",
+    href: "/about"
   },
 ];
