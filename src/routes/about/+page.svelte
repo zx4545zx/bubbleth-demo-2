@@ -27,7 +27,8 @@
 	</p>
 </div>
 <WoodenSign label='Zone' />
-<div>
+
+<div id="zone">
 	{#each zoneImages as z}
 		<Card url={z.url} title={z.title} des={z.des} />
 	{/each}
