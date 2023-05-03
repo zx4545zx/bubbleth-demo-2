@@ -92,7 +92,7 @@
 			</div>
 		</div>
 		<div class="navbar-center">
-			<a href="/" class="text-xl normal-case">
+			<a href="/" class="text-xl normal-case mt-6">
 				<div class="avatar">
 					<div class="w-24 rounded">
 						<img src={logo} alt="logo" />
