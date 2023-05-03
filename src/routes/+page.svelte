@@ -22,7 +22,7 @@
 		<div class="pb-8 m-4">
 			<!-- // text -->
 			<div class="add-bg p-4 text-center rounded-full">
-				<h1 class="pb-2 text-3xl">ยินดีต้อนรับ สู่</h1>
+				<h1 class="pb-2 text-3xl">ยินดีต้อนรับ</h1>
 				<h2 class="text-4xl">
 					<span class=" text-secondary">Bubble</span> in the
 					<span class=" text-primary">forest</span>
