@@ -10,13 +10,13 @@
 </div> -->
 
 <div class="relative">
-	<img src={woodenSign} alt="Your Image" class="w-full h-auto object-contain pe-3" />
+	<img src={woodenSign} alt="your-img" class="w-full h-auto object-contain pe-3" />
 	<div class="absolute inset-0 flex items-center justify-center">
 		<p
 			class="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl pb-5"
 			style="font-size: 8vw; font-family: cursive;"
 		>
-			Zone
+			{label}
 		</p>
 	</div>
 </div>

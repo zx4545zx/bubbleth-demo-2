@@ -20,13 +20,13 @@
 </div>
 
 <div class="py-4 mx-4 text-center">
-	<img src={about} alt="aboutPic" />
+	<img src={about} alt="aboutPic" class=" rounded-2xl"/>
 	<p class="pt-4">
 		คาเฟ่สไตล์อเมริกันอินเดียนแดง ให้ความรู้สึกสกชื่น สีเขียวน้ำตาล เป็นธรรมชาติ ผสมผสานกับความ
 		Beachy และ น้ำสี Turquoise จนได้ขนานนามว่า Mini Maldives Thailand
 	</p>
 </div>
-<WoodenSign label='Dining Zone' />
+<WoodenSign label='Zone' />
 <div>
 	{#each zoneImages as z}
 		<Card url={z.url} title={z.title} des={z.des} />
