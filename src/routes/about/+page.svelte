@@ -4,7 +4,6 @@
 	import messenger from '$lib/assets/icon/social/messenger.png';
 	import instagram from '$lib/assets/icon/social/instagram.png';
 	import tiktok from '$lib/assets/icon/social/tiktok.png';
-	import about from '$lib/assets/about/DJI_0110.jpg';
 	import Card from '../components/Card.svelte';
 	import { zoneImages } from '$lib/data/aboutLanding';
 	import WoodenSign from '../components/WoodenSign.svelte';
