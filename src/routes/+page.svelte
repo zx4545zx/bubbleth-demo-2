@@ -24,7 +24,7 @@
 			<div class="add-bg p-4 text-start rounded-full">
 				<h1 class="pb-2 text-3xl">ยินดีต้อนรับ</h1>
 				<h2 class="text-4xl">
-					<div class="text-center">
+					<div class="text-start">
 						<span style="font-family: 'Lora';">BUBBLE</span>
 					</div>
 					<p style="font-family: 'Lora';">in the</p>
