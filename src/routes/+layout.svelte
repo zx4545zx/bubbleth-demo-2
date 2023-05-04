@@ -23,14 +23,18 @@
 		rel="stylesheet"
 	/>
 	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
 </svelte:head>
 
 <div class="app">
 	<main>
 		<Navbar />
 		{#key $page.url.pathname}
-			<div class="mx-auto -mt-10 sm:container sm:w-3/4 pb-8 min-h-screen" in:fly={{ y:400, duration: 500 }}>
-				<slot  />
+			<div
+				class="mx-auto -mt-10 sm:container sm:w-3/4 pb-8 min-h-screen"
+				in:fly={{ y: 400, duration: 500 }}
+			>
+				<slot />
 			</div>
 		{/key}
 		<Footer />
