@@ -146,9 +146,9 @@
 
 <style>
 	.add-img {
-		background: url('../../lib/assets/bg3.png');
+		background: url('../../lib/assets/bg3_3.png');
 		background-position: center;
-		background-size: 114vw;
+		background-size: cover;
 	}
 	.add {
 		filter: drop-shadow(2px 4px 6px gray);

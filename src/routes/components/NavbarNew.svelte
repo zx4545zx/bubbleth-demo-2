@@ -164,20 +164,17 @@
           <hr class="p-2" />
           <li>
 
-            <div class=" flex justify-between items-center">
+            <div class=" flex justify-center gap-4 items-center focus:bg-transparent active:bg-transparent focus-within:bg-transparent">
               <button class="btn btn-circle btn-primary p-0 bg-transparent border-none ">
                 <img src={th} alt="line" class="w-full"/>
               </button>
               <button class="btn btn-circle btn-primary p-0 bg-transparent border-none">
                 <img src={us} alt="line" class="w-full"/>
               </button>
-              <button class="btn btn-circle btn-primary p-0 bg-transparent border-none">
+              <!-- <button class="btn btn-circle btn-primary p-0 bg-transparent border-none">
                 <img src={cn} alt="line" class="w-full"/>
-              </button>
+              </button> -->
             </div>
-
-            <!-- <img src={th} alt="line" class="w-8 h-8 btn btn-circle"/>
-            <img src={cn} alt="line" class="w-8 h-8 btn btn-circle"/> -->
           </li>
 				</ul>
 			</div>
