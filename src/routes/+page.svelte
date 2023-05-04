@@ -19,17 +19,17 @@
 	<div class="h-full">
 		<SlideFrame images={slideImages} />
 
-		<div class="pb-8 m-4">
+		<div class="pb-8">
 			<!-- // text -->
-			<div class="add-bg p-4 text-start rounded-full">
+			<div class="add-bg text-start rounded-full">
 				<h1 class="pb-2 text-3xl text-center">ยินดีต้อนรับ</h1>
 				<h2 class="text-4xl mb-4">
 					<div class="text-center text-6xl">
-						<span style="font-family: 'Lora';">BUBBLE</span>
+						<span style="font-family: 'Lora'; text-shadow: 4px 2px lightblue;" class="text-blue-600">BUBBLE</span>
 					</div>
 					<div class="w-max mx-auto ">
-						<p style="font-family: 'Lora';">in the</p>
-						<p class="text-center ml-20" style="font-family: 'Lora';">
+						<p style="font-family: 'Lora';" class=" text-amber-800">in the</p>
+						<p class="text-center ml-20 text-green-800" style="font-family: 'Lora';">
 							<span style="font-family: 'Great Vibes'; font-size: 90px;">F</span>orest
 						</p>
 					</div>

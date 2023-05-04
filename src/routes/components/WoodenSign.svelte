@@ -14,7 +14,7 @@
 	<div class="absolute inset-0 flex items-center justify-center">
 		<h1
 			class="text-center text-xl font-black sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"
-			style="padding-bottom: 20px; font-family: Great Vibes; font-weight: bolder;"
+			style="padding-bottom: 20px; font-weight: bolder; font-family: 'Satisfy', cursive;"
 		>
 			{label}
 		</h1>
