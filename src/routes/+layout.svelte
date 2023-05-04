@@ -9,6 +9,7 @@
 
 	import './styles.css';
 	import '@splidejs/svelte-splide/css';
+	import NavbarNew from './components/NavbarNew.svelte';
 </script>
 
 <svelte:head>
@@ -28,7 +29,8 @@
 
 <div class="app">
 	<main>
-		<Navbar />
+		<!-- <Navbar /> -->
+		<NavbarNew />
 		{#key $page.url.pathname}
 			<div
 				class="mx-auto -mt-10 sm:container sm:w-3/4 pb-8 min-h-screen"

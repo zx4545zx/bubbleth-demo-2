@@ -1,43 +1,40 @@
 <script>
 	import { page } from '$app/stores';
 
-	// import home from '../../lib/assets/icon/home.png';
 	import about from '../../lib/assets/icon/about.png';
 	import event from '../../lib/assets/icon/event.png';
 	import food from '../../lib/assets/icon/food.png';
 	import review from '../../lib/assets/icon/review.png';
-	import home from "../../lib/assets/zone.png"
-	import ab from "../../lib/assets/ab.png"
+	import home from '../../lib/assets/icon/zone.png';
 
 	let pages = [
 		{
-			name: "Home",
+			name: 'Home',
 			url: '/',
 			img: home
 		},
 		{
-			name: "Food",
+			name: 'Food',
 			url: '/food',
 			img: food
 		},
 		{
-			name: "Review",
+			name: 'Review',
 			url: '/review',
 			img: review
 		},
 		{
-			name: "Event",
+			name: 'Event',
 			url: '/event',
 			img: event
 		},
 		{
-			name: "About Us",
+			name: 'About Us',
 			url: '/about',
-			img: ab,
-			class: "w-10 pb-[10px] pt-[6px]"
-		},
+			img: about
+		}
 	];
-	
+
 	// let pages = [
 	// 	{
 	// 		url: '/',
@@ -124,13 +121,16 @@
 	// 		`
 	// 	}
 	// ];
-
 </script>
 
-<div class="add-img btm-nav h-16 sm:hidden">
+<div class="add-img btm-nav h-16 sm:hidden text-gray-600">
 	{#each pages as p}
-		<a href={p.url} class={$page.url.pathname === p.url ? 'active text-primary  bg-t border-t-4' : ''}>
-			<img src={p.img} alt="bottom-nav" class={`w-14 ${p?.class}`}>
+		<a href={p.url} class={$page.url.pathname === p.url ? 'active text-amber-800 bg-transparent border-t-4' : ''}>
+			<img
+				src={p.img}
+				alt="bottom-nav"
+				class={$page.url.pathname === p.url ? 'w-14 aspect-square add' : 'w-14 aspect-square'}
+			/>
 			<div class="-mt-4 text-sm">{p.name}</div>
 		</a>
 	{/each}
@@ -146,11 +146,11 @@
 
 <style>
 	.add-img {
-		background: url("../../lib/assets/bg-nav.png");
+		background: url('../../lib/assets/bg-nav.png');
 		background-position: center;
 		background-size: 114vw;
 	}
-	.bg-t {
-    background: rgba(197, 254, 197, 0.2);
-}
+	.add {
+		filter: drop-shadow(2px 4px 6px gray);
+	}
 </style>
