@@ -22,16 +22,19 @@
 		<div class="pb-8 m-4">
 			<!-- // text -->
 			<div class="add-bg p-4 text-start rounded-full">
-				<h1 class="pb-2 text-3xl">ยินดีต้อนรับ</h1>
-				<h2 class="text-4xl">
-					<div class="text-start">
+				<h1 class="pb-2 text-3xl text-center">ยินดีต้อนรับ</h1>
+				<h2 class="text-4xl mb-4">
+					<div class="text-center text-6xl">
 						<span style="font-family: 'Lora';">BUBBLE</span>
 					</div>
-					<p style="font-family: 'Lora';">in the</p>
-					<p class="text-center" style="font-family: 'Lora';"><span style="font-family: 'Great Vibes'; font-size: 70px;">F</span>orest</p>
-
+					<div class="w-max mx-auto ">
+						<p style="font-family: 'Lora';">in the</p>
+						<p class="text-center ml-20" style="font-family: 'Lora';">
+							<span style="font-family: 'Great Vibes'; font-size: 70px;">F</span>orest
+						</p>
+					</div>
 				</h2>
-				<h4 class="text-lg">คาเฟ่ และร้านอาหาร สไตล์มัลดีฟส์สุดเก๋ ที่มีเรือนไม้ลอยน้ำ</h4>
+				<h4 class="text-lg text-center">คาเฟ่ และร้านอาหาร สไตล์มัลดีฟส์สุดเก๋ ที่มีเรือนไม้ลอยน้ำ</h4>
 			</div>
 		</div>
 
