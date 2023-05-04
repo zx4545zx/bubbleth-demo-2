@@ -1,12 +1,18 @@
 <script>
 	import { page } from '$app/stores';
 
-	import highlight from '../../lib/assets/icon/highlight.png';
+	import home from '../../lib/assets/icon/home.png';
+	import about from '../../lib/assets/icon/about.png';
 	import event from '../../lib/assets/icon/event.png';
 	import food from '../../lib/assets/icon/food.png';
 	import review from '../../lib/assets/icon/review.png';
 
 	let pages = [
+		{
+			name: "Home",
+			url: '/',
+			img: home
+		},
 		{
 			name: "Food",
 			url: '/food',
@@ -25,7 +31,7 @@
 		{
 			name: "About Us",
 			url: '/about',
-			img: highlight,
+			img: about,
 		},
 	];
 	
