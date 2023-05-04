@@ -30,7 +30,7 @@
 					<div class="w-max mx-auto ">
 						<p style="font-family: 'Lora';">in the</p>
 						<p class="text-center ml-20" style="font-family: 'Lora';">
-							<span style="font-family: 'Great Vibes'; font-size: 70px;">F</span>orest
+							<span style="font-family: 'Great Vibes'; font-size: 90px;">F</span>orest
 						</p>
 					</div>
 				</h2>
