@@ -146,7 +146,7 @@
 
 <style>
 	.add-img {
-		background: url('../../lib/assets/bg-nav.png');
+		background: url('../../lib/assets/bg3.png');
 		background-position: center;
 		background-size: 114vw;
 	}
