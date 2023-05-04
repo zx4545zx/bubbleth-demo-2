@@ -43,9 +43,12 @@
 
 <style>
 	.add-img {
-		background-image: url("../../lib/assets/bg-nav.jpeg");
+		background: url("../../lib/assets/bg-nav.png");
 		background-position: center;
 		background-size: cover;
+
+		bottom: 40px;
+		background-size: 105vw;
 	}
 	.bg-t {
     background: rgba(197, 254, 197, 0.2);
