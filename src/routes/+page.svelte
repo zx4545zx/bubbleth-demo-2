@@ -5,8 +5,6 @@
 
 	import { slideImages } from '$lib/data/homeSlide';
 	import { landingImages } from '$lib/data/homeLanding';
-
-	// import checkpoint from '$lib/assets/checkpoint/1.jpg';
 </script>
 
 <svelte:head>
@@ -14,27 +12,29 @@
 	<meta name="description" content="Bubble in tho Forrest" />
 </svelte:head>
 
-<!-- svelte-ignore missing-declaration -->
 <div class="mx-auto h-full">
 	<div class="h-full">
 		<SlideFrame images={slideImages} />
 
 		<div class="pb-8">
-			<!-- // text -->
 			<div class="add-bg text-start rounded-full">
 				<h1 class="pb-2 text-3xl text-center">ยินดีต้อนรับ</h1>
 				<h2 class="text-4xl mb-4">
 					<div class="text-center text-6xl">
-						<span style="font-family: 'Lora'; text-shadow: 4px 2px lightblue;" class="text-blue-600">BUBBLE</span>
+						<span style="font-family: 'Lora'; text-shadow: 4px 2px lightblue;" class="text-blue-600"
+							>BUBBLE</span
+						>
 					</div>
-					<div class="w-max mx-auto ">
+					<div class="w-max mx-auto">
 						<p style="font-family: 'Lora';" class=" text-amber-800">in the</p>
 						<p class="text-center ml-20 text-green-800" style="font-family: 'Lora';">
 							<span style="font-family: 'Great Vibes'; font-size: 90px;">F</span>orest
 						</p>
 					</div>
 				</h2>
-				<h4 class="text-lg text-center">คาเฟ่ และร้านอาหาร สไตล์มัลดีฟส์สุดเก๋ ที่มีเรือนไม้ลอยน้ำ</h4>
+				<h4 class="text-lg text-center">
+					คาเฟ่ และร้านอาหาร สไตล์มัลดีฟส์สุดเก๋ ที่มีเรือนไม้ลอยน้ำ
+				</h4>
 			</div>
 		</div>
 
@@ -46,7 +46,6 @@
 			{/each}
 		</Content>
 
-		<!-- // location -->
 		<div class="text-center p-4">
 			<a href="/about" class="mx-auto text-sm rounded-full btn btn-sm btn-outline btn-secondary">
 				<svg

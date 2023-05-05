@@ -1,7 +1,7 @@
 <script>
 	import { landingImages } from '$lib/data/foodLanding';
 	import { slideImages } from "$lib/data/foodSlide"
-	import Slide from '../components/Slide.svelte';
+	
 	import SlideFrame from '../components/SlideFrame.svelte';
 	import WoodenSign from '../components/WoodenSign.svelte';
 </script>
@@ -10,8 +10,6 @@
 	<title>Food - Bubble in the Forrest</title>
 	<meta name="description" content="Food - Bubble in the Forrest" />
 </svelte:head>
-
-<!-- <Slide {slideImages} /> -->
 
 <SlideFrame images={slideImages}/>
 

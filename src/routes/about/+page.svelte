@@ -4,10 +4,12 @@
 	import messenger from '$lib/assets/icon/social/messenger.png';
 	import instagram from '$lib/assets/icon/social/instagram.png';
 	import tiktok from '$lib/assets/icon/social/tiktok.png';
+	
 	import Card from '../components/Card.svelte';
-	import { zoneImages } from '$lib/data/aboutLanding';
 	import WoodenSign from '../components/WoodenSign.svelte';
 	import SlideFrame from '../components/SlideFrame.svelte';
+
+	import { zoneImages } from '$lib/data/aboutLanding';
 	import { slideImages } from '$lib/data/aboutSlide';
 </script>
 
@@ -17,7 +19,7 @@
 </svelte:head>
 
 <div class=" mt-6">
-	<WoodenSign label='About Us' />
+	<WoodenSign label="About Us" />
 </div>
 
 <div class="py-4 mx-4 text-center">
@@ -27,7 +29,8 @@
 		Beachy และ น้ำสี Turquoise จนได้ขนานนามว่า Mini Maldives Thailand
 	</p>
 </div>
-<WoodenSign label='Zone' />
+
+<WoodenSign label="Zone" />
 
 <div id="zone">
 	{#each zoneImages as z}
@@ -43,9 +46,9 @@
 </div>
 
 <div class="w-full p-4">
-	<label for="my-modal" class="w-full btn btn-outline btn-secondary"
-		>ติดตามข่าวสาร หรือจองล่วงหน้า ได้ที่</label
-	>
+	<label for="my-modal" class="w-full btn btn-outline btn-secondary">
+		ติดตามข่าวสาร หรือจองล่วงหน้า ได้ที่
+	</label>
 </div>
 
 <div class="w-full p-4 mx-auto aspect-video">

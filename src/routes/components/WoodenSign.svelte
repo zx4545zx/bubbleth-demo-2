@@ -4,11 +4,6 @@
 	export let label = '';
 </script>
 
-<!-- <div class="flex items-center justify-center relative">
-	<img class="w-full h-full object-cover" src={woodenSign} alt="" />
-	<p class="text-center mt-4 absolute">{label}</p>
-</div> -->
-
 <div class="relative">
 	<img src={woodenSign} alt="woodenSign" class="w-9/12 h-auto mx-auto max-w-sm pe-2" />
 	<div class="absolute inset-0 flex items-center justify-center">
@@ -23,7 +18,7 @@
 
 <style>
 	h1 {
-		text-shadow: 1px 1px #AD8E70;
-		color: #3C2317;
+		text-shadow: 1px 1px #ad8e70;
+		color: #3c2317;
 	}
 </style>
