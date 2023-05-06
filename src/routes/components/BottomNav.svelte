@@ -56,7 +56,7 @@
 
 <style>
 	.add-img {
-		background: url('../../lib/assets/bg3_3.png');
+		background: url('../../lib/assets/bg3_5.png');
 		background-position: center;
 		background-size: cover;
 	}
