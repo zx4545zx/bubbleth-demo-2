@@ -4,7 +4,7 @@
 	import messenger from '$lib/assets/icon/social/messenger.png';
 	import instagram from '$lib/assets/icon/social/instagram.png';
 	import tiktok from '$lib/assets/icon/social/tiktok.png';
-	
+
 	import Card from '../components/Card.svelte';
 	import WoodenSign from '../components/WoodenSign.svelte';
 	import SlideFrame from '../components/SlideFrame.svelte';
@@ -18,15 +18,23 @@
 	<meta name="description" content="About - Bubble in the Forrest" />
 </svelte:head>
 
-<div class=" mt-6">
-	<WoodenSign label="About Us" />
-</div>
-
-<div class="py-4 mx-4 text-center">
+<div class="py-4 mx-4 mt-6 text-center">
 	<SlideFrame images={slideImages} />
-	<p class="pt-4">
+	<WoodenSign label="About Us" />
+
+	<p>
 		คาเฟ่สไตล์อเมริกันอินเดียนแดง ให้ความรู้สึกสดชื่น สีเขียวน้ำตาล เป็นธรรมชาติ ผสมผสานกับความ
 		Beachy และ น้ำสี Turquoise จนได้ขนานนามว่า Mini Maldives Thailand
+	</p>
+
+	
+	<h6 class="pt-5 font-bold">ที่มาของสไตล์อินเดียนแดง</h6>
+
+	<p>
+		เกิดมาจากลุคสาวละตินผมยาวผิดแทนและมีความเซกซี่ของตัวการ์ตูน Pocahontas
+		ที่มีลักษณะคล้ายกับเจ้าของร้าน จึงเนรมิตสไตล์การตกแต่งร้าน
+		ยูนิฟอมของพนักงานให้มีความเป็นสีน้ำตาลแนวคนป่า มีพรอพเป็นขนนกตกแต่ง และบริเวณรอบ ๆ คาเฟ่
+		เราจะใช้ความเป็นธรรมชาติมาทำให้สวยงาม
 	</p>
 </div>
 
