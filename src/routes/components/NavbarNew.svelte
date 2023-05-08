@@ -22,7 +22,7 @@
 	<div class="items-start navbar bg-none">
 		<div class="navbar-start">
 			<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-			<div class="hidden dropdown sm:block">
+			<div class="hidden dropdown sm:block sm:mt-10 md:mt-14 xl:mt-20">
 				<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 				<!-- svelte-ignore a11y-label-has-associated-control -->
 				<label tabindex="0" class="btn btn-ghost btn-circle">
@@ -64,7 +64,7 @@
 		</div>
 
 		<div class="navbar-end">
-			<div class="dropdown dropdown-end">
+			<div class="dropdown dropdown-end sm:mt-10 md:mt-14 xl:mt-20">
 				<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 				<!-- svelte-ignore a11y-label-has-associated-control -->
 				<label tabindex="0" class="btn btn-ghost btn-circle bg-[#f0ffff8c]">

@@ -39,11 +39,13 @@
 		</div>
 
 		<Content>
+			<div class="grid lg:grid-cols-2">
 			{#each landingImages as img}
 				<a href={img?.href}>
 					<Card url={img.url} title={img.title} des={img.des} />
 				</a>
 			{/each}
+		</div>
 		</Content>
 
 		<div class="text-center p-4">
