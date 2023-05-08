@@ -1,7 +1,11 @@
 <script>
-	import { landingImages } from '$lib/data/reviewLanding';
+	// import { landingImages } from '$lib/data/reviewLanding';
 	import wongnai from '$lib/assets/icon/social/wongnai.png';
 	import WoodenSign from '../components/WoodenSign.svelte';
+
+	/** @type {import('./$types').PageData} */
+	export let data;
+
 </script>
 
 <svelte:head>
@@ -14,7 +18,7 @@
 </div>
 
 <div class="flex flex-col gap-4 px-4">
-	{#each landingImages as img}
+	{#each data.landingImages as img}
 		<div class="w-full overflow-hidden shadow-xl rounded-3xl bg-none">
 			<img src={img} alt="food" class="object-cover w-full" />
 		</div>

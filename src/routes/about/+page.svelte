@@ -9,8 +9,12 @@
 	import WoodenSign from '../components/WoodenSign.svelte';
 	import SlideFrame from '../components/SlideFrame.svelte';
 
-	import { zoneImages } from '$lib/data/aboutLanding';
-	import { slideImages } from '$lib/data/aboutSlide';
+	// import { zoneImages } from '$lib/data/aboutLanding';
+	// import { slideImages } from '$lib/data/aboutSlide';
+
+	/** @type {import('./$types').PageData} */
+	export let data;
+	
 </script>
 
 <svelte:head>
@@ -19,7 +23,7 @@
 </svelte:head>
 
 <div class="py-4 mx-4 mt-6 text-center">
-	<SlideFrame images={slideImages} />
+	<SlideFrame images={data.slideImages} />
 	<WoodenSign label="About Us" />
 
 	<p>
@@ -27,7 +31,6 @@
 		Beachy และ น้ำสี Turquoise จนได้ขนานนามว่า Mini Maldives Thailand
 	</p>
 
-	
 	<h6 class="pt-5 font-bold">ที่มาของสไตล์อินเดียนแดง</h6>
 
 	<p>
@@ -41,7 +44,7 @@
 <WoodenSign label="Zone" />
 
 <div id="zone">
-	{#each zoneImages as z}
+	{#each data.zoneImages as z}
 		<Card url={z.url} title={z.title} des={z.des} />
 	{/each}
 </div>

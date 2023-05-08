@@ -3,8 +3,12 @@
 	import Card from './components/Card.svelte';
 	import Content from './components/Content.svelte';
 
-	import { slideImages } from '$lib/data/homeSlide';
-	import { landingImages } from '$lib/data/homeLanding';
+	// import { slideImages } from '$lib/data/homeSlide';
+	// import { landingImages } from '$lib/data/homeLanding';
+
+	/** @type {import('./$types').PageData} */
+	export let data;
+
 </script>
 
 <svelte:head>
@@ -14,7 +18,7 @@
 
 <div class="mx-auto h-full">
 	<div class="h-full">
-		<SlideFrame images={slideImages} />
+		<SlideFrame images={data.slideImages} />
 
 		<div class="pb-8">
 			<div class="add-bg text-start rounded-full">
@@ -40,7 +44,7 @@
 
 		<Content>
 			<div class="grid lg:grid-cols-2">
-			{#each landingImages as img}
+			{#each data.landingImages as img}
 				<a href={img?.href}>
 					<Card url={img.url} title={img.title} des={img.des} />
 				</a>

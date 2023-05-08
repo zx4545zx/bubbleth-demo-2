@@ -3,10 +3,13 @@
 	import SlideFrame from '../components/SlideFrame.svelte';
 	import WoodenSign from '../components/WoodenSign.svelte';
 
-	import { cm, sk } from '$lib/data/eventSlide';
-	import { landingImages } from '$lib/data/eventLanding';
+	/** @type {import('./$types').PageData} */
+	export let data;
 
-	let allEvent = [...sk, ...cm];
+	// import { cm, sk } from '$lib/data/eventSlide';
+	// import { landingImages } from '$lib/data/eventLanding';
+
+	let allEvent = [...data.sk, ...data.cm];
 </script>
 
 <svelte:head>
@@ -19,7 +22,7 @@
 <WoodenSign label="Events" />
 
 <div class="flex flex-col gap-4 px-4">
-	{#each landingImages as img}
+	{#each data.landingImages as img}
 		<div class="w-full shadow-xl card card-compact bg-base-100">
 			<figure>
 				<Slide slideImages={img.slide} type="fade" arrows={false} />
