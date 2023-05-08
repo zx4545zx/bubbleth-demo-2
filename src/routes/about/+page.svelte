@@ -22,6 +22,8 @@
 	<SlideFrame images={slideImages} />
 	<WoodenSign label="About Us" />
 
+	<div id="zone"></div>
+
 	<p>
 		คาเฟ่สไตล์อเมริกันอินเดียนแดง ให้ความรู้สึกสดชื่น สีเขียวน้ำตาล เป็นธรรมชาติ ผสมผสานกับความ
 		Beachy และ น้ำสี Turquoise จนได้ขนานนามว่า Mini Maldives Thailand
@@ -40,7 +42,7 @@
 
 <WoodenSign label="Zone" />
 
-<div id="zone">
+<div>
 	{#each zoneImages as z}
 		<Card url={z.url} title={z.title} des={z.des} />
 	{/each}
