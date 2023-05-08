@@ -1,10 +1,15 @@
 <script>
+// @ts-nocheck
+
 	import SlideFrame from './components/SlideFrame.svelte';
 	import Card from './components/Card.svelte';
 	import Content from './components/Content.svelte';
 
 	import { slideImages } from '$lib/data/homeSlide';
 	import { landingImages } from '$lib/data/homeLanding';
+	import { slideText } from '../lib/data/homeDes';
+
+	import { lang } from "$lib/stores/language"
 </script>
 
 <svelte:head>
@@ -18,7 +23,7 @@
 
 		<div class="pb-8">
 			<div class="add-bg text-start rounded-full">
-				<h1 class="pb-2 text-3xl text-center">ยินดีต้อนรับ</h1>
+				<h1 class="pb-2 text-3xl text-center">{slideText.welcome[$lang]}</h1>
 				<h2 class="text-4xl mb-4">
 					<div class="text-center text-6xl">
 						<span style="font-family: 'Lora'; text-shadow: 4px 2px lightblue;" class="text-blue-600"
@@ -33,7 +38,7 @@
 					</div>
 				</h2>
 				<h4 class="text-lg text-center">
-					คาเฟ่ และร้านอาหาร สไตล์มัลดีฟส์สุดเก๋ ที่มีเรือนไม้ลอยน้ำ
+					{slideText.des[$lang]}
 				</h4>
 			</div>
 		</div>
@@ -41,7 +46,7 @@
 		<Content>
 			{#each landingImages as img}
 				<a href={img?.href}>
-					<Card url={img.url} title={img.title} des={img.des} />
+					<Card url={img.url} title={img.title[$lang]} des={img.des[$lang]} />
 				</a>
 			{/each}
 		</Content>

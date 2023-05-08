@@ -6,7 +6,7 @@ const initialValue = browser ? window.localStorage.getItem('lang') ?? 'th' : 'th
 
 export const lang = writable(initialValue);
 
-lang.subscribe((value) => {
+lang.subscribe((value = ('th' || 'en')) => {
   if (browser) {
     window.localStorage.setItem('lang', value);
   }
