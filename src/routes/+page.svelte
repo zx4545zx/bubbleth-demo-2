@@ -7,7 +7,7 @@
 
 	import { slideImages } from '$lib/data/homeSlide';
 	import { landingImages } from '$lib/data/homeLanding';
-	import { slideText } from '../lib/data/homeDes';
+	import { slideText } from '$lib/data/homeDes';
 
 	import { lang } from "$lib/stores/language"
 </script>
@@ -37,7 +37,7 @@
 						</p>
 					</div>
 				</h2>
-				<h4 class="text-lg text-center">
+				<h4 class="text-lg text-center px-8">
 					{slideText.des[$lang]}
 				</h4>
 			</div>

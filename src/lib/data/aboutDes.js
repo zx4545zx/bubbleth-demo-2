@@ -5,7 +5,7 @@ export const slideText = {
 	},
   title: {
     th: "ที่มาของสไตล์อินเดียนแดง",
-    en: "origin of indian style"
+    en: "Origin of indian style"
   },
   titleDes: {
     th: "เกิดมาจากลุคสาวละตินผมยาวผิวแทนและมีความเซ็กซี่ของตัวการ์ตูน Pocahontas ที่มีลักษณะคล้ายกับเจ้าของร้าน จึงเนรมิตสไตล์การตกแต่งร้าน ยูนิฟอมของพนักงานให้มีความเป็นสีน้ำตาลแนวคนป่า มีพรอพเป็นขนนกตกแต่ง และบริเวณรอบ ๆ คาเฟ่ เราจะใช้ความเป็นธรรมชาติมาทำให้สวยงาม",
@@ -23,12 +23,16 @@ export const slideText = {
     th: "เปิด-ปิด : 10:00 น. - 21:00 น.",
     en: "Open : 10:00 a.m. - 9:00 p.m."
   },
+  telText: {
+    th: "ติดต่อ : ",
+    en: "Tel : "
+  },
   tel: {
     th: "065-727-6888",
     en: "+6657276888"
   },
   button: {
     th: 'ติดตามข่าวสาร หรือจองล่วงหน้า ได้ที่',
-    en: "Click here to follow the news or book in advance."
+    en: "Follow or book now"
   }
 };
