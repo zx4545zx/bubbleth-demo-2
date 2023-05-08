@@ -23,9 +23,10 @@
 		อร่อยและความทรงจำกลับบ้าน
 	</p>
 </div>
-<div class="flex flex-col gap-4 px-4">
+
+<div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 px-4">
 	{#each landingImages as img}
-		<div class="w-full overflow-hidden shadow-xl rounded-3xl bg-none">
+		<div class="w-full overflow-hidden shadow-xl rounded-3xl bg-none sm:w-52 md:w-64">
 			<img src={img} alt="food" class="object-cover w-full" />
 		</div>
 	{/each}
