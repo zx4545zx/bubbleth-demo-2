@@ -1,11 +1,12 @@
 <script>
+// @ts-nocheck
+
 	import SlideFrame from './components/SlideFrame.svelte';
 	import Card from './components/Card.svelte';
 	import Content from './components/Content.svelte';
-
-	// import { slideImages } from '$lib/data/homeSlide';
-	// import { landingImages } from '$lib/data/homeLanding';
-
+	import { slideText } from '$lib/data/homeDes';
+	import { lang } from "$lib/stores/language";
+  
 	/** @type {import('./$types').PageData} */
 	export let data;
 </script>
@@ -21,7 +22,7 @@
 
 		<div class="pb-8">
 			<div class="add-bg text-start rounded-full">
-				<h1 class="pb-2 text-3xl text-center">ยินดีต้อนรับ</h1>
+				<h1 class="pb-2 text-3xl text-center">{slideText.welcome[$lang]}</h1>
 				<h2 class="text-4xl mb-4">
 					<div class="text-center text-6xl">
 						<span style="font-family: 'Lora'; text-shadow: 4px 2px lightblue;" class="text-blue-600"
@@ -35,8 +36,8 @@
 						</p>
 					</div>
 				</h2>
-				<h4 class="text-lg text-center">
-					คาเฟ่ และร้านอาหาร สไตล์มัลดีฟส์สุดเก๋ ที่มีเรือนไม้ลอยน้ำ
+				<h4 class="text-lg text-center px-8">
+					{slideText.des[$lang]}
 				</h4>
 			</div>
 		</div>
@@ -46,7 +47,7 @@
 				{#each data.landingImages as img,i}
 					<div class="block lg:hidden">
 						<a href={img?.href}>
-							<Card url={img.url} title={img.title} des={img.des} />
+							<Card url={img.url} title={img.title[$lang]} des={img.des[$lang]} />
 						</a>
 					</div>
 
@@ -57,8 +58,8 @@
 							<figure class="flex justify-start items-center"><img src={img.url} alt="img" class="rounded-3xl h-full w-full object-cover"/></figure>
 							{/if}
 							<div class="card-body justify-center items-start">
-								<h2 class="card-title text-[2.5rem] leading-[3rem]">{img.title}</h2>
-								<div>{img.des}</div>
+								<h2 class="card-title text-[2.5rem] leading-[3rem]">{img.title[$lang]}</h2>
+								<div>{img.des[$lang]}</div>
 							</div>
 							{#if (i%2 !== 0)}
 							<figure class="flex justify-end items-center"><img src={img.url} alt="img" class="rounded-3xl h-full w-full object-cover"/></figure>

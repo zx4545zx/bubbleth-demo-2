@@ -12,6 +12,7 @@
 	import cn from '$lib/assets/icon/flag/cn.png';
 
 	import WaveTop from './WaveTop.svelte';
+	import { lang } from '$lib/stores/language';
 </script>
 
 <div class="relative w-full">
@@ -122,10 +123,12 @@
 							active:bg-transparent
 							"
 						>
-							<button class="btn btn-circle btn-primary p-0 bg-transparent border-none">
+							<button class="btn btn-circle btn-primary p-0 bg-transparent border-none"
+							on:click={() => lang.set("th")}>
 								<img src={th} alt="line" class="w-full" />
 							</button>
-							<button class="btn btn-circle btn-primary p-0 bg-transparent border-none">
+							<button class="btn btn-circle btn-primary p-0 bg-transparent border-none"
+							on:click={() => lang.set("en")}>
 								<img src={us} alt="line" class="w-full" />
 							</button>
 							<!-- <button class="btn btn-circle btn-primary p-0 bg-transparent border-none">

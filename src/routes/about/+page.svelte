@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
 	import line from '$lib/assets/icon/social/line.png';
 	import facebook from '$lib/assets/icon/social/facebook.png';
 	import messenger from '$lib/assets/icon/social/messenger.png';
@@ -8,13 +10,12 @@
 	import Card from '../components/Card.svelte';
 	import WoodenSign from '../components/WoodenSign.svelte';
 	import SlideFrame from '../components/SlideFrame.svelte';
-
-	// import { zoneImages } from '$lib/data/aboutLanding';
-	// import { slideImages } from '$lib/data/aboutSlide';
+	import { slideText } from '$lib/data/aboutDes';
+	import { lang } from "$lib/stores/language"
 
 	/** @type {import('./$types').PageData} */
 	export let data;
-	
+
 </script>
 
 <svelte:head>
@@ -26,20 +27,16 @@
 	<SlideFrame images={data.slideImages} />
 	<WoodenSign label="About Us" />
 
-	<div id="zone"></div>
-
-	<p>
-		คาเฟ่สไตล์อเมริกันอินเดียนแดง ให้ความรู้สึกสดชื่น สีเขียวน้ำตาล เป็นธรรมชาติ ผสมผสานกับความ
-		Beachy และ น้ำสี Turquoise จนได้ขนานนามว่า Mini Maldives Thailand
+  <div id="zone"></div>
+	
+  <p class="set-word">
+		{slideText.des[$lang]}
 	</p>
 
-	<h6 class="pt-5 font-bold">ที่มาของสไตล์อินเดียนแดง</h6>
+	<h6 class="pt-5 font-bold">{slideText.title[$lang]}</h6>
 
-	<p>
-		เกิดมาจากลุคสาวละตินผมยาวผิดแทนและมีความเซกซี่ของตัวการ์ตูน Pocahontas
-		ที่มีลักษณะคล้ายกับเจ้าของร้าน จึงเนรมิตสไตล์การตกแต่งร้าน
-		ยูนิฟอมของพนักงานให้มีความเป็นสีน้ำตาลแนวคนป่า มีพรอพเป็นขนนกตกแต่ง และบริเวณรอบ ๆ คาเฟ่
-		เราจะใช้ความเป็นธรรมชาติมาทำให้สวยงาม
+	<p class="set-word">
+		{slideText.titleDes[$lang]}
 	</p>
 </div>
 
@@ -47,20 +44,22 @@
 
 <div class="grid grid-cols-4 gap-4">
 	{#each data.zoneImages as z}
-		<Card url={z.url} title={z.title} des={z.des} />
+		<Card url={z.url} title={z.title[$lang]} des={z.des[$lang]} />
 	{/each}
 </div>
 
 <div class="py-4 mx-4 text-center rounded-xl">
-	<p>170 ซ.เจริญท่า ต.บางเตย</p>
-	<p>อ.สามพราน นครปฐม 73170</p>
-	<p class="mt-4">เปิด-ปิด : 10:00 น. - 21:00 น.</p>
-	<p>ติดต่อ : <a href="tel:0657276888" class="underline text-secondary">065-727-6888</a></p>
+	<p>{slideText.locationA[$lang]}</p>
+	<p>{slideText.locationB[$lang]}</p>
+	<p class="mt-4">{slideText.time[$lang]}</p>
+	<p>{slideText.telText[$lang]}
+		<a href="tel:0657276888" class="underline text-secondary">{slideText.tel[$lang]}</a>
+	</p>
 </div>
 
 <div class="w-full p-4">
 	<label for="my-modal" class="w-full btn btn-outline btn-secondary">
-		ติดตามข่าวสาร หรือจองล่วงหน้า ได้ที่
+		{slideText.button[$lang]}
 	</label>
 </div>
 
@@ -110,3 +109,11 @@
 		>
 	</label>
 </label>
+
+<style>
+	.set-word {
+		word-break: break-word;
+    text-align: justify;
+		text-align-last: center;
+	}
+</style>

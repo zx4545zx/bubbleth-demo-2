@@ -1,13 +1,12 @@
 <script>
+// @ts-nocheck
+
 	import Slide from '../components/Slide.svelte';
 	import SlideFrame from '../components/SlideFrame.svelte';
 	import WoodenSign from '../components/WoodenSign.svelte';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
-
-	// import { cm, sk } from '$lib/data/eventSlide';
-	// import { landingImages } from '$lib/data/eventLanding';
 
 	let allEvent = [...data.sk, ...data.cm];
 </script>
@@ -28,8 +27,8 @@
 				<Slide slideImages={img.slide} type="fade" arrows={false} />
 			</figure>
 			<div class="card-body">
-				<h2 class="card-title">{img.title}</h2>
-				<p>{img.des}</p>
+				<h2 class="card-title">{img.title[$lang]}</h2>
+				<p>{img.des[$lang]}</p>
 			</div>
 		</div>
 	{/each}
