@@ -21,7 +21,7 @@
 
 <WoodenSign label="Events" />
 
-<div class="flex flex-col gap-4 px-4">
+<div class="flex flex-col lg:grid lg:grid-cols-2 gap-4 px-4">
 	{#each data.landingImages as img}
 		<div class="w-full shadow-xl card card-compact bg-base-100">
 			<figure>
