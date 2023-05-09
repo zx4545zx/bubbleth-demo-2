@@ -8,13 +8,13 @@
 	import Card from '../components/Card.svelte';
 	import WoodenSign from '../components/WoodenSign.svelte';
 	import SlideFrame from '../components/SlideFrame.svelte';
-	import { Splide, SplideSlide } from '@splidejs/svelte-splide';
 
 	// import { zoneImages } from '$lib/data/aboutLanding';
 	// import { slideImages } from '$lib/data/aboutSlide';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
+	
 </script>
 
 <svelte:head>
@@ -44,9 +44,9 @@
 <WoodenSign label="Zone" />
 
 <div id="zone" class="grid grid-cols-4 gap-4">
-			{#each data.zoneImages as z}
-				<Card url={z.url} title={z.title} des={z.des} />
-			{/each}
+	{#each data.zoneImages as z}
+		<Card url={z.url} title={z.title} des={z.des} />
+	{/each}
 </div>
 
 <div class="py-4 mx-4 text-center rounded-xl">
