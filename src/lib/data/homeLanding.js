@@ -11,14 +11,14 @@ export const landingImages = [
     title: "อาหารรสเลิส",
     des: "อาหารมีเลิสรส อีกทั้งยังสามารถสังสรรค์อาหาร และรสชาติได้ตามใจต้องการ",
     href: "/food",
-    class: "lg:col-span-2"
+    class: "col-span-2"
   },
   {
     url: new URL("../assets/home/landing/3.jpg", import.meta.url).href,
     title: "บรรยากาศร่มรื่น",
     des: "บรรยากาศร่มรื่น สบายๆ พนักงานอัธยาศัยดี เหมาะแก่การมาพักผ่อนหย่อนใจ",
     href: "/about#zone",
-    class: "lg:col-span-2"
+    class: "col-span-2"
   },
   {
     url: new URL("../assets/home/landing/4.jpg", import.meta.url).href,
@@ -32,7 +32,7 @@ export const landingImages = [
     title: "ดนตรีสด",
     des: "บรรยากาศที่ดี ต้องคู่กับบทเพลงที่ช่วยชะโลมจิตใจ การแสดงดนตรีสด บทเพลงสบายๆ จากทางร้าน",
     href: "/event",
-    class: "lg:col-span-2"
+    class: "col-span-2"
   },
   {
     url: new URL("../assets/home/landing/6.jpg", import.meta.url).href,

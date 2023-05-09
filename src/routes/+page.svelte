@@ -42,7 +42,7 @@
 		</div>
 
 		<Content>
-			<div class="lg:grid lg:grid-cols-4 px-7 gap-5">
+			<div class="grid grid-cols-4 gap-5">
 				{#each data.landingImages as img}
 					<div class="{img.class}">
 						<a href={img?.href}>
