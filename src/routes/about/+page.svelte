@@ -10,11 +10,12 @@
 	import Card from '../components/Card.svelte';
 	import WoodenSign from '../components/WoodenSign.svelte';
 	import SlideFrame from '../components/SlideFrame.svelte';
-
-	import { zoneImages } from '$lib/data/aboutLanding';
-	import { slideImages } from '$lib/data/aboutSlide';
 	import { slideText } from '$lib/data/aboutDes';
 	import { lang } from "$lib/stores/language"
+
+	/** @type {import('./$types').PageData} */
+	export let data;
+
 </script>
 
 <svelte:head>
@@ -23,14 +24,15 @@
 </svelte:head>
 
 <div class="py-4 mx-4 mt-6 text-center">
-	<SlideFrame images={slideImages} />
+	<SlideFrame images={data.slideImages} />
 	<WoodenSign label="About Us" />
 
-	<p class="set-word">
+  <div id="zone"></div>
+	
+  <p class="set-word">
 		{slideText.des[$lang]}
 	</p>
 
-	
 	<h6 class="pt-5 font-bold">{slideText.title[$lang]}</h6>
 
 	<p class="set-word">
@@ -40,8 +42,8 @@
 
 <WoodenSign label="Zone" />
 
-<div id="zone">
-	{#each zoneImages as z}
+<div class="grid grid-cols-4 gap-4">
+	{#each data.zoneImages as z}
 		<Card url={z.url} title={z.title[$lang]} des={z.des[$lang]} />
 	{/each}
 </div>
