@@ -23,13 +23,14 @@
 	<div class="items-start navbar bg-none">
 		<div class="navbar-start">
 			<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-			<div class="hidden dropdown sm:block sm:mt-10 md:mt-14 xl:mt-20">
+			<div class="hidden dropdown sm:block sm:mt-8">
 				<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 				<!-- svelte-ignore a11y-label-has-associated-control -->
-				<label tabindex="0" class="btn btn-ghost btn-circle">
+				<label tabindex="0" class="btn btn-ghost btn-circle bg-[#f0ffff8c]">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						class="w-5 h-5"
+						width="20"
+						height="20"
 						fill="none"
 						viewBox="0 0 24 24"
 						stroke="currentColor"
@@ -65,14 +66,14 @@
 		</div>
 
 		<div class="navbar-end">
-			<div class="dropdown dropdown-end sm:mt-10 md:mt-14 xl:mt-20">
+			<div class="dropdown dropdown-end sm:mt-8">
 				<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 				<!-- svelte-ignore a11y-label-has-associated-control -->
 				<label tabindex="0" class="btn btn-ghost btn-circle bg-[#f0ffff8c]">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						width="16"
-						height="16"
+						width="20"
+						height="20"
 						fill="black"
 						class="bi bi-list"
 						viewBox="0 0 16 16"
