@@ -24,9 +24,9 @@
 		{slideText.des[$lang]}
 	</p>
 </div>
-<div class="flex flex-col gap-4 px-4">
+<div class="flex flex-wrap justify-center gap-4 px-4">
 	{#each data.landingImages as img}
-		<div class="w-full overflow-hidden shadow-xl rounded-3xl bg-none">
+		<div class="w-[16rem] overflow-hidden shadow-xl rounded-3xl bg-none">
 			<img src={img} alt="food" class="object-cover w-full" />
 		</div>
 	{/each}
