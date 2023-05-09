@@ -28,7 +28,7 @@
 <div class="container mx-auto my-8 text-center">
 	<a
 		href="https://www.wongnai.com/restaurants/741513gT-bubble-in-the-forest-cafe"
-		class="shadow-2xl btn btn-outline btn-info"
+		class="btn btn-outline btn-info"
 		>ดูเพิ่มเติม ได้ที่ &nbsp;<img src={wongnai} alt="wongnai" class="w-8 rounded-xl" /></a
 	>
 </div>
