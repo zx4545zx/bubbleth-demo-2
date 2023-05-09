@@ -3,11 +3,11 @@
 	import Card from './components/Card.svelte';
 	import Content from './components/Content.svelte';
 
-	import { slideImages } from '$lib/data/homeSlide';
-	import { landingImages } from '$lib/data/homeLanding';
+	// import { slideImages } from '$lib/data/homeSlide';
+	// import { landingImages } from '$lib/data/homeLanding';
 
-	// /** @type {import('./$types').PageData} */
-	// export let data;
+	/** @type {import('./$types').PageData} */
+	export let data;
 </script>
 
 <svelte:head>
@@ -17,7 +17,7 @@
 
 <div class="mx-auto h-full">
 	<div class="h-full">
-		<SlideFrame images={slideImages} />
+		<SlideFrame images={data.slideImages} />
 
 		<div class="pb-8">
 			<div class="add-bg text-start rounded-full">
@@ -42,12 +42,29 @@
 		</div>
 
 		<Content>
-			<div class="grid grid-cols-4 gap-5">
-				{#each landingImages as img}
-					<div class="{img.className}">
+			<div class="grid pb-16 gap-16 px-4 sm:px-0">
+				{#each data.landingImages as img,i}
+					<div class="block lg:hidden">
 						<a href={img?.href}>
 							<Card url={img.url} title={img.title} des={img.des} />
 						</a>
+					</div>
+
+					<div class="hidden lg:block">
+
+						<div class="flex max-h-96 bg-base-100 shadow-xl rounded-3xl">
+							{#if (i%2 === 0)}
+							<figure class="flex justify-start items-center"><img src={img.url} alt="img" class="rounded-3xl h-full w-full object-cover"/></figure>
+							{/if}
+							<div class="card-body justify-center items-start">
+								<h2 class="card-title text-[2.5rem] leading-[3rem]">{img.title}</h2>
+								<div>{img.des}</div>
+							</div>
+							{#if (i%2 !== 0)}
+							<figure class="flex justify-end items-center"><img src={img.url} alt="img" class="rounded-3xl h-full w-full object-cover"/></figure>
+							{/if}
+						</div>
+
 					</div>
 				{/each}
 			</div>
