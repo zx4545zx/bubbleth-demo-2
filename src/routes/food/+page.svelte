@@ -1,9 +1,12 @@
 <script>
-	import { landingImages } from '$lib/data/foodLanding';
-	import { slideImages } from '$lib/data/foodSlide';
+	// import { landingImages } from '$lib/data/foodLanding';
+	// import { slideImages } from '$lib/data/foodSlide';
 
 	import SlideFrame from '../components/SlideFrame.svelte';
 	import WoodenSign from '../components/WoodenSign.svelte';
+
+	/** @type {import('./$types').PageData} */
+	export let data;
 </script>
 
 <svelte:head>
@@ -11,7 +14,7 @@
 	<meta name="description" content="Food - Bubble in the Forrest" />
 </svelte:head>
 
-<SlideFrame images={slideImages} />
+<SlideFrame images={data.slideImages} />
 
 <WoodenSign label="Food & Drinks" />
 <div class="mb-6 mx-4 text-center">
@@ -23,10 +26,9 @@
 		อร่อยและความทรงจำกลับบ้าน
 	</p>
 </div>
-
-<div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 px-4">
-	{#each landingImages as img}
-		<div class="w-full overflow-hidden shadow-xl rounded-3xl bg-none sm:w-52 md:w-64">
+<div class="flex flex-col gap-4 px-4">
+	{#each data.landingImages as img}
+		<div class="w-full overflow-hidden shadow-xl rounded-3xl bg-none">
 			<img src={img} alt="food" class="object-cover w-full" />
 		</div>
 	{/each}
