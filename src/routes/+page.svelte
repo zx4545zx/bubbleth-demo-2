@@ -8,7 +8,6 @@
 
 	/** @type {import('./$types').PageData} */
 	export let data;
-
 </script>
 
 <svelte:head>
@@ -43,13 +42,15 @@
 		</div>
 
 		<Content>
-			<div class="grid lg:grid-cols-2">
-			{#each data.landingImages as img}
-				<a href={img?.href}>
-					<Card url={img.url} title={img.title} des={img.des} />
-				</a>
-			{/each}
-		</div>
+			<div class="lg:grid lg:grid-cols-4 px-8 gap-5">
+				{#each data.landingImages as img}
+					<div class="{img.class}">
+						<a href={img?.href}>
+							<Card url={img.url} title={img.title} des={img.des} />
+						</a>
+					</div>
+				{/each}
+			</div>
 		</Content>
 
 		<div class="text-center p-4">

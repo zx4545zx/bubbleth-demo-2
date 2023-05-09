@@ -4,7 +4,6 @@
 	export let des = '';
 </script>
 
-<div class="w-full p-4">
 	<div class="card w-full bg-base-100 shadow-xl mx-auto">
 		<figure><img src={url} alt="card-img" /></figure>
 
@@ -13,4 +12,3 @@
 			<p>{des}</p>
 		</div>
 	</div>
-</div>
