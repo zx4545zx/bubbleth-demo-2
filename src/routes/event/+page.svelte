@@ -13,8 +13,8 @@
 </script>
 
 <svelte:head>
-	<title>Event - Bubble in the Forrest</title>
-	<meta name="description" content="Event - Bubble in the Forrest" />
+	<title>Event - Bubble in the Forest</title>
+	<meta name="description" content="Event - Bubble in the Forest" />
 </svelte:head>
 
 <SlideFrame images={allEvent} />

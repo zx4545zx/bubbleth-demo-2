@@ -12,8 +12,8 @@
 </script>
 
 <svelte:head>
-	<title>Home Page - Bubble in tho Forrest</title>
-	<meta name="description" content="Bubble in tho Forrest" />
+	<title>Home Page - Bubble in tho Forest</title>
+	<meta name="description" content="Bubble in tho Forest" />
 </svelte:head>
 
 <div class="mx-auto h-full">

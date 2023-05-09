@@ -12,8 +12,8 @@
 </script>
 
 <svelte:head>
-	<title>Food - Bubble in the Forrest</title>
-	<meta name="description" content="Food - Bubble in the Forrest" />
+	<title>Food - Bubble in the Forest</title>
+	<meta name="description" content="Food - Bubble in the Forest" />
 </svelte:head>
 
 <SlideFrame images={data.slideImages} />

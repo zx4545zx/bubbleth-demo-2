@@ -19,8 +19,8 @@
 </script>
 
 <svelte:head>
-	<title>About - Bubble in the Forrest</title>
-	<meta name="description" content="About - Bubble in the Forrest" />
+	<title>About - Bubble in the Forest</title>
+	<meta name="description" content="About - Bubble in the Forest" />
 </svelte:head>
 
 <div class="py-4 mx-4 mt-6 text-center">

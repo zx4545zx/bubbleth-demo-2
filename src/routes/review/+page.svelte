@@ -9,8 +9,8 @@
 </script>
 
 <svelte:head>
-	<title>Review - Bubble in the Forrest</title>
-	<meta name="description" content="Review - Bubble in the Forrest" />
+	<title>Review - Bubble in the Forest</title>
+	<meta name="description" content="Review - Bubble in the Forest" />
 </svelte:head>
 
 <div class=" mt-6">
