@@ -5,7 +5,7 @@
 </script>
 
 	<div class="card w-full bg-base-100 shadow-xl">
-		<figure><img src={url} alt="card-img" /></figure>
+		<figure><img src={url} alt="card-img" class="w-full h-[16rem] object-cover" /></figure>
 
 		<div class="card-body">
 			<h2 class="card-title">{title}</h2>

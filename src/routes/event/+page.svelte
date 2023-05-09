@@ -4,6 +4,7 @@
 	import Slide from '../components/Slide.svelte';
 	import SlideFrame from '../components/SlideFrame.svelte';
 	import WoodenSign from '../components/WoodenSign.svelte';
+	import { lang } from "$lib/stores/language";
 
 	/** @type {import('./$types').PageData} */
 	export let data;

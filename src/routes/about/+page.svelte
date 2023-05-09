@@ -42,7 +42,7 @@
 
 <WoodenSign label="Zone" />
 
-<div class="grid grid-cols-4 gap-4">
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-4">
 	{#each data.zoneImages as z}
 		<Card url={z.url} title={z.title[$lang]} des={z.des[$lang]} />
 	{/each}
