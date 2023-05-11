@@ -15,4 +15,13 @@
     background-position: top;
     background-repeat: repeat no-repeat;
 	}
+  
+  @media (min-width: 640px) {
+    .add-img {
+      background: url('../../lib/assets/bg-top-new.jpg');
+      background-size: contain;
+      background-position: top;
+      background-repeat: repeat no-repeat;
+    }
+  }
 </style>

@@ -9,7 +9,8 @@ body {
 	box-sizing: border-box;
 	text-decoration: none;
 	list-style: none;
-	background-color: #ddecf5;
+	background-color: #eeffff;
+	/* background-color: #ffffff; */
 	font-family: 'Kanit', sans-serif;
 	scroll-behavior: smooth;
 }
