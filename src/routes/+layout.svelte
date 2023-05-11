@@ -27,13 +27,13 @@
 	/>
 </svelte:head>
 
-<div class="app">
+<div class="app sm:bg-white">
 	<main>
 		<!-- <Navbar /> -->
 		<NavbarNew />
 		{#key $page.url.pathname}
 			<div
-				class="mx-auto -mt-10 sm:container sm:w-3/4 pb-8 min-h-screen"
+				class="mx-auto -mt-10 pb-8 min-h-screen"
 				in:fly={{ y: 400, duration: 500 }}
 			>
 				<slot />

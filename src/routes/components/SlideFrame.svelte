@@ -21,7 +21,7 @@
         <div class="relative">
           <div class="relative">
             <div
-              class="absolute left-0 w-full h-full top-4 sm:top-1 lg:-top-3 xl:-top-1 2xl:top-0"
+              class="absolute left-0 w-full h-full top-4 sm:top-1 lg:-top-3 xl:top-0 2xl:top-0"
               style="z-index: -1;"
             >
               <img
