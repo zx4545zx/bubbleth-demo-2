@@ -65,7 +65,7 @@
 								</figure>
 							{/if}
 							<div class="card-body justify-center items-start">
-								<h2 class="card-title text-[2.5rem] leading-[3rem]">{img.title[$lang]}</h2>
+								<h2 class="card-title text-[2.25rem] leading-[3rem]">{img.title[$lang]}</h2>
 								<div>{img.des[$lang]}</div>
 							</div>
 							{#if i % 2 !== 0}
